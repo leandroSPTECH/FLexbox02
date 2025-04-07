@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box Ordem 4 3 2 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .base {
+            background-color: #d0d3d4;           /* Faixa cinza */
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row-reverse;         /* Ordem 4 3 2 1 */
+            justify-content: flex-start;         /* Alinha os quadrados à esquerda */
+            padding: 10px 0;                     /* Espaço vertical interno */
+        }
+
+        .flex-item {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            margin-left: 5px;                    /* Espaço entre os quadrados */
+        }
+
+        .box1 {
+            background-color: #63b1bc;
+        }
+
+        .box2 {
+            background-color: #1f2a44;
+        }
+
+        .box3 {
+            background-color: #ed145b;
+        }
+
+        .box4 {
+            background-color: #efb661;
+            margin-left: 10px; /* Um espacinho a mais do lado do primeiro */
+        }
+
+        h1 {
+            font-size: 16px;
+            color: black;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="base">
+        <div class="flex-item box1"><h1>1</h1></div>
+        <div class="flex-item box2"><h1>2</h1></div>
+        <div class="flex-item box3"><h1>3</h1></div>
+        <div class="flex-item box4"><h1>4</h1></div>
+    </div>
+
+</body>
+</html>
